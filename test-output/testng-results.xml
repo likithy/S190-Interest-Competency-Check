@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="140568" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:24:09 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="140568" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:24:09 IST">
+      <class name="Tests.Tests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Tests@3b0143d3]" name="setup" is-config="true" duration-ms="10746" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:21:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="Verify_SummerDresses_Sorting()[pri:0, instance:Tests.Tests@3b0143d3]" name="Verify_SummerDresses_Sorting" duration-ms="37457" started-at="2021-10-16T19:21:59 IST" finished-at="2021-10-16T19:22:37 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at Tests.Tests.Verify_SummerDresses_Sorting(Tests.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SummerDresses_Sorting -->
+        <test-method status="FAIL" signature="Verify_SummerDresses_filters()[pri:0, instance:Tests.Tests@3b0143d3]" name="Verify_SummerDresses_filters" duration-ms="82479" started-at="2021-10-16T19:22:37 IST" finished-at="2021-10-16T19:23:59 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Filter Not Applied Successfully for LIST_SummerDresses_Size - S (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Size - M (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Size - L (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - White (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Black (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Orange (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Blue (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Green (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Yellow (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Styles - Casual (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Styles - Girly (2),
+Filter Not Applied Successfully for LIST_SummerDresses_Composition - Polyester (2),
+Filter Not Applied Successfully for LIST_SummerDresses_Composition - Viscose (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Maxi Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Midi Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Short Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Availability - In stock (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Condition - New (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Manufacturer - Fashion Manufacturer (3),
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Filter Not Applied Successfully for LIST_SummerDresses_Size - S (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Size - M (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Size - L (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - White (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Black (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Orange (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Blue (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Green (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Colors - Yellow (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Styles - Casual (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Styles - Girly (2),
+Filter Not Applied Successfully for LIST_SummerDresses_Composition - Polyester (2),
+Filter Not Applied Successfully for LIST_SummerDresses_Composition - Viscose (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Maxi Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Midi Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Properties - Short Dress (1),
+Filter Not Applied Successfully for LIST_SummerDresses_Availability - In stock (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Condition - New (3),
+Filter Not Applied Successfully for LIST_SummerDresses_Manufacturer - Fashion Manufacturer (3),
+Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at Tests.Tests.Verify_SummerDresses_filters(Tests.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SummerDresses_filters -->
+        <test-method status="PASS" signature="checknewsletter()[pri:0, instance:Tests.Tests@3b0143d3]" name="checknewsletter" duration-ms="8783" started-at="2021-10-16T19:23:59 IST" finished-at="2021-10-16T19:24:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checknewsletter -->
+        <test-method status="PASS" signature="closedrivers()[pri:0, instance:Tests.Tests@3b0143d3]" name="closedrivers" is-config="true" duration-ms="929" started-at="2021-10-16T19:24:08 IST" finished-at="2021-10-16T19:24:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedrivers -->
+      </class> <!-- Tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
