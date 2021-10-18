@@ -12,6 +12,7 @@ import org.testng.asserts.SoftAssert;
 import Libraries.Project;
 import Libraries.ProjectConstants;
 
+
 public class Tests {
 
 	String ProjectPath = System.getProperty("user.dir");;

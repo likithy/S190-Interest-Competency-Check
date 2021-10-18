@@ -118,6 +118,12 @@ public class SummerDresses {
 		
 	}
 	
+	
+	public void AddItemsToCart(WebDriver driver,SoftAssert softassert)
+	{
+		repository
+	}
+	
 //sort verification with all values
 	public void CheckSorting(WebDriver driver,SoftAssert softassert)
 	{
