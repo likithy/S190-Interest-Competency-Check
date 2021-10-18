@@ -36,8 +36,20 @@ WebDriver driver;
      
     }
     
+@Test(enabled=true)
+
+public void CheckOut_Flow()
+{
+	SoftAssert softassert = new SoftAssert();
+	Project RunProject= new Project();
+	
+	RunProject.RunTestCase(driver, "TC_SummerDresses_CheckOut",softassert);
+	
+	softassert.assertAll();
+
+}
 //Test one to check the filters in SummerDresses Page
-    @Test
+    @Test(enabled=true)
     
     public void Verify_SummerDresses_filters()
     {
@@ -45,12 +57,14 @@ WebDriver driver;
     	Project RunProject= new Project();
     	
     	RunProject.RunTestCase(driver, "TC_SummerDresses_VerifyFilters",softassert);
+
+    	
     	softassert.assertAll();
     
     }
 
   //Test two to check the newsletter in home Page    
-    @Test
+    @Test(enabled=true)
     public void checknewsletter()
     {
     	SoftAssert softassert = new SoftAssert();
@@ -61,7 +75,7 @@ WebDriver driver;
     
     }
 //Test one to check the filters in SummerDresses Page    
-    @Test
+    @Test(enabled=true)
     public void Verify_SummerDresses_Sorting()
     {
     	SoftAssert softassert = new SoftAssert();

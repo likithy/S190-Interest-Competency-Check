@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
@@ -39,6 +40,23 @@ public class CommonLibraries {
         }
     }
 	
+	public void WaitFor(WebDriver driver,int time,SoftAssert softassert)
+	{
+		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+	}
+	
+public void HoverOver(WebDriver driver,String header,SoftAssert softassert)
+{
+	WebElement ele = repository.GetObject(driver, header, softassert);
+
+	//Creating object of an Actions class
+	Actions action = new Actions(driver);
+
+	//Performing the mouse hover action on the target element.
+	action.moveToElement(ele).perform();
+	
+}
+
 	//set div's under header for home page
 	public void setHeaderSize(int value,SoftAssert softassert)
 	{
@@ -63,12 +81,13 @@ public class CommonLibraries {
 	}
 	
 	//verifying header
-	public boolean CheckHeader(WebDriver driver,SoftAssert softassert)
+	public void CheckHeader(WebDriver driver,SoftAssert softassert)
 	{
 	
 		List<WebElement> Header=repository.GetObjects(driver, "DIV_Header",softassert);
 		
 		
+		waitForPageLoaded(driver, softassert);
 		
 	header_checkcount++;
 	
@@ -83,7 +102,7 @@ public class CommonLibraries {
 		}
 		else {
 			softassert.fail("Header is not present");
-			return false;
+			
 		}
 	}
 	
@@ -91,59 +110,66 @@ public class CommonLibraries {
 		
 		int divs_under=Header.size();
 		//checking number of div's under header with no of div's under footer from home page
-		if(divs_under==getHeaderSize(softassert))
+		if(divs_under>=getHeaderSize(softassert))
 		{
 			System.out.println("Header is present");
 		}
 		else {
 			softassert.fail("Header is not present");
-			return false;
+
 		}
 		
 	}
-		return true;
+	
+	WaitFor(driver, 30, softassert);
+
 		}
 	
 	//footer verification
-	public boolean CheckFooter(WebDriver driver,SoftAssert softassert)
+		public void CheckFooter(WebDriver driver,SoftAssert softassert)
 	{
 	
-		List<WebElement> Footer=repository.GetObjects(driver, "DIV_Footer",softassert);
+		List<WebElement> Header=repository.GetObjects(driver, "DIV_Footer",softassert);
 		
-footer_checkcount++;
+		
+		waitForPageLoaded(driver, softassert);
+		
+	footer_checkcount++;
 	
 	if(footer_checkcount ==1)
 	{
 		//set number of div's under footer in home page;
-		setFooterSize(Footer.size(),softassert);
+		setFooterSize(Header.size(),softassert);
+		
 		if(FooterDivSize>0)
 		{
 			System.out.println("Footer is present");
 		}
 		else {
-			System.out.println("Footer is not present");
-		return false;
+			softassert.fail("Footer is not present");
+			
 		}
 	}
-	//checking number of div's under footer with no of div's under footer from home page
+	
 	else {
 		
-		int divs_under=Footer.size();
-		
-		if(divs_under==getFooterSize(softassert))
+		int divs_under=Header.size();
+		//checking number of div's under header with no of div's under footer from home page
+		if(divs_under>=getFooterSize(softassert))
 		{
 			System.out.println("Footer is present");
 		}
 		else {
-			System.out.println("Footer is not present");
-			return false;
+			softassert.fail("Footer is not present");
+
 		}
 		
 	}
 	
-	return true;
-	}	
-	
+	WaitFor(driver, 30, softassert);
+
+		}
+
 			
 	
 	//checking if loader gif is present in the page for error;

@@ -4,6 +4,7 @@ package Libraries;
 import org.openqa.selenium.WebDriver;
 import org.testng.asserts.SoftAssert;
 
+import Pages.CheckOutPage;
 import Pages.Home;
 import Pages.SummerDresses;
 
@@ -16,6 +17,7 @@ public void RunTestCase(WebDriver driver, String TestCaseName, SoftAssert softas
 
    
 	SummerDresses summerdress=new SummerDresses(driver,TestCaseName,softassert);
+	CheckOutPage checkout=new CheckOutPage(driver,TestCaseName,softassert);
 		
 	}
 }

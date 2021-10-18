@@ -76,6 +76,7 @@ public class ObjectRepositories {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			objElement = driver.findElement(byGetObject);
 			System.out.println("Element Exists - "+header);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
 		} catch (Exception e) {
 			
@@ -218,6 +219,89 @@ catch (NoSuchElementException e) {
 			locatordetails[0] = "xpath";
 			locatordetails[1] = "//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]";
 			break;	
+			
+		case "LIST_SummerDresses_Product1":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"center_column\"]/ul/li[1]";
+			break;
+			
+		case "LNK_Header_Cart":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"header\"]/div[3]/div/div/div[3]/div/a";
+			break;
+
+		case "LNK_Header_Checkout":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"button_order_cart\"]";
+			break;
+			
+		case "DIV_Header_ProductStatus":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"layer_cart\"]/div[1]/div[1]/h2";
+			break;
+			
+		case "LNK_Header_CheckOut":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a";
+			break;
+			
+		case "TXT_Header_ProductPrice":
+			locatordetails[0] = "id";
+			locatordetails[1] = "total_price_container";
+			break;
+			
+		case "LNK_CheckOutPage_CheckOut":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"center_column\"]/p[2]/a[1]";
+			break;
+			
+		case "TXT_CheckOutPage_RegisteredEmail":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"email\"]";
+			break;
+			
+
+		case "TXT_CheckOutPage_Pass":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"passwd\"]";
+			break;
+			
+
+		case "BTN_CheckOutPage_Login":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"SubmitLogin\"]";
+			break;
+			
+		case "BTN_CheckOutPage_CheckOut":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"center_column\"]/form/p/button";
+			break;
+			
+		case "BTN_CheckOutPage_AgreeTerms":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"cgv\"]";
+			break;
+
+		case "BTN_CheckOutPage_CheckOut2":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"form\"]/p/button";
+			break;
+
+		case "BTN_CheckOutPage_PayByCheck":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"HOOK_PAYMENT\"]/div[2]/div/p/a";
+			break;
+
+		case "BTN_CheckOutPage_ConfirmOrder":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"cart_navigation\"]/button";
+			break;
+			
+		case "TXT_CheckOutPage_OrderStatus":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"center_column\"]/p[1]";
+			break;
+			
 			
 			
 		}

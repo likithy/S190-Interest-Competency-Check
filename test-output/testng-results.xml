@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="140568" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:24:09 IST">
+  <suite name="Default suite" duration-ms="194348" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:18:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="140568" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:24:09 IST">
+    <test name="Default test" duration-ms="194348" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:18:49 IST">
       <class name="Tests.Tests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Tests@3b0143d3]" name="setup" is-config="true" duration-ms="10746" started-at="2021-10-16T19:21:48 IST" finished-at="2021-10-16T19:21:59 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Tests@551aa95a]" name="setup" is-config="true" duration-ms="15567" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:15:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="Verify_SummerDresses_Sorting()[pri:0, instance:Tests.Tests@3b0143d3]" name="Verify_SummerDresses_Sorting" duration-ms="37457" started-at="2021-10-16T19:21:59 IST" finished-at="2021-10-16T19:22:37 IST">
+        <test-method status="PASS" signature="CheckOut_Flow()[pri:0, instance:Tests.Tests@551aa95a]" name="CheckOut_Flow" duration-ms="29395" started-at="2021-10-18T14:15:51 IST" finished-at="2021-10-18T14:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOut_Flow -->
+        <test-method status="FAIL" signature="Verify_SummerDresses_Sorting()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_Sorting" duration-ms="60600" started-at="2021-10-18T14:16:20 IST" finished-at="2021-10-18T14:17:21 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -34,7 +38,7 @@ Filter Not Applied Successfully for LNK_SummerDresses_PriceRange ,
 Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Tests.Tests.Verify_SummerDresses_Sorting(Tests.java:70)
+at Tests.Tests.Verify_SummerDresses_Sorting(Tests.java:85)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -69,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SummerDresses_Sorting -->
-        <test-method status="FAIL" signature="Verify_SummerDresses_filters()[pri:0, instance:Tests.Tests@3b0143d3]" name="Verify_SummerDresses_filters" duration-ms="82479" started-at="2021-10-16T19:22:37 IST" finished-at="2021-10-16T19:23:59 IST">
+        <test-method status="FAIL" signature="Verify_SummerDresses_filters()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_filters" duration-ms="81735" started-at="2021-10-18T14:17:21 IST" finished-at="2021-10-18T14:18:42 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -118,7 +122,7 @@ Filter Not Applied Successfully for LIST_SummerDresses_Manufacturer - Fashion Ma
 Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Tests.Tests.Verify_SummerDresses_filters(Tests.java:47)
+at Tests.Tests.Verify_SummerDresses_filters(Tests.java:62)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -153,11 +157,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SummerDresses_filters -->
-        <test-method status="PASS" signature="checknewsletter()[pri:0, instance:Tests.Tests@3b0143d3]" name="checknewsletter" duration-ms="8783" started-at="2021-10-16T19:23:59 IST" finished-at="2021-10-16T19:24:08 IST">
+        <test-method status="PASS" signature="checknewsletter()[pri:0, instance:Tests.Tests@551aa95a]" name="checknewsletter" duration-ms="5951" started-at="2021-10-18T14:18:42 IST" finished-at="2021-10-18T14:18:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checknewsletter -->
-        <test-method status="PASS" signature="closedrivers()[pri:0, instance:Tests.Tests@3b0143d3]" name="closedrivers" is-config="true" duration-ms="929" started-at="2021-10-16T19:24:08 IST" finished-at="2021-10-16T19:24:09 IST">
+        <test-method status="PASS" signature="closedrivers()[pri:0, instance:Tests.Tests@551aa95a]" name="closedrivers" is-config="true" duration-ms="912" started-at="2021-10-18T14:18:48 IST" finished-at="2021-10-18T14:18:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedrivers -->

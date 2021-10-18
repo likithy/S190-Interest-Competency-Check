@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-848722775\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1241828759\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -119,6 +119,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Tests" hash-for-method="CheckOut_Flow">CheckOut_Flow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Tests.Tests" hash-for-method="checknewsletter">checknewsletter</a> <!-- method navigator-link -->
@@ -157,7 +162,7 @@
 	Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Tests.Tests.Verify_SummerDresses_Sorting(Tests.java:70)
+	at Tests.Tests.Verify_SummerDresses_Sorting(Tests.java:85)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -218,7 +223,7 @@
 	Filter Not Applied Successfully for LNK_SummerDresses_PriceRange 
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Tests.Tests.Verify_SummerDresses_filters(Tests.java:47)
+	at Tests.Tests.Verify_SummerDresses_filters(Tests.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -261,6 +266,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="CheckOut_Flow">
+                  </a> <!-- CheckOut_Flow -->
+                  <span class="method-name">CheckOut_Flow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checknewsletter">
                   </a> <!-- checknewsletter -->
                   <span class="method-name">checknewsletter</span>
@@ -271,7 +283,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-848722775\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1241828759\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -320,19 +332,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Verify_SummerDresses_filters')
 data.setCell(0, 2, 'Tests.Tests')
-data.setCell(0, 3, 82479);
+data.setCell(0, 3, 81735);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Verify_SummerDresses_Sorting')
 data.setCell(1, 2, 'Tests.Tests')
-data.setCell(1, 3, 37457);
+data.setCell(1, 3, 60600);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checknewsletter')
+data.setCell(2, 1, 'CheckOut_Flow')
 data.setCell(2, 2, 'Tests.Tests')
-data.setCell(2, 3, 8783);
+data.setCell(2, 3, 29395);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checknewsletter')
+data.setCell(3, 2, 'Tests.Tests')
+data.setCell(3, 3, 5951);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -369,24 +385,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">CheckOut_Flow</span>
+                <span class="method-start">15701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Verify_SummerDresses_Sorting</span>
-                <span class="method-start">10882 ms</span>
+                <span class="method-start">45107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Verify_SummerDresses_filters</span>
-                <span class="method-start">48351 ms</span>
+                <span class="method-start">105717 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checknewsletter</span>
-                <span class="method-start">130835 ms</span>
+                <span class="method-start">187458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closedrivers</span>
-                <span class="method-start">139626 ms</span>
+                <span class="method-start">193416 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

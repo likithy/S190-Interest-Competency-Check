@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
+import org.testng.log4testng.Logger;
 
 import Libraries.CommonLibraries;
 import Libraries.ObjectRepositories;
@@ -35,24 +36,10 @@ public class SummerDresses {
 		
 		}
 		//checking header in SummerDresses page
-		if(commonlib.CheckHeader(driver,softassert))
-		{
-			System.out.println("Header Verified");
-		}
-		else
-		{
-			softassert.fail("Header not verified");
-		}
+		commonlib.CheckHeader(driver,softassert);
 		//checkingfooter
-		if(commonlib.CheckFooter(driver,softassert))
-		{
-			System.out.println("Footer Verified");
-		}
-		else
-		{
-			softassert.fail("Footer not verified");
-		}
-		//newsletter functionality check
+		commonlib.CheckFooter(driver,softassert);
+		
 		
 		switch(TestCaseName){
 		case "TC_SummerDresses_VerifyFilters":
@@ -61,6 +48,10 @@ public class SummerDresses {
 		case "TC_SummerDresses_VerifySorting":
 			CheckSorting(driver, softassert);
 			break;
+		case "TC_SummerDresses_CheckOut":
+			AddItemsToCart(driver, softassert);
+			break;
+			
 		}
 		
 		
@@ -121,7 +112,16 @@ public class SummerDresses {
 	
 	public void AddItemsToCart(WebDriver driver,SoftAssert softassert)
 	{
-		repository
+		WebElement element=repository.GetObject(driver, "LNK_SummerDresses_PrintedSummerDress", softassert);
+		commonlib.HoverOver(driver, "LIST_SummerDresses_Product1", softassert);
+		element.click();
+		commonlib.waitForPageLoaded(driver, softassert);
+		commonlib.WaitFor(driver, 40, softassert);
+		
+		element=repository.GetObject(driver, "LNK_Header_CheckOut", softassert);
+		element.click();
+		commonlib.WaitFor(driver, 30, softassert);
+		
 	}
 	
 //sort verification with all values

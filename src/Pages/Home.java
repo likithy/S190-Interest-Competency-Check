@@ -21,23 +21,10 @@ public class Home {
 	public Home(WebDriver driver,String TestCaseName ,SoftAssert softassert)
 	{
 	//checking header in homepage
-		if(commonlib.CheckHeader(driver,softassert))
-		{
-			System.out.println("Header Verified");
-		}
-		else
-		{
-			Assert.fail("Header not verified");
-		}
+		commonlib.CheckHeader(driver,softassert);
+		
 	//checking footer in homepage
-		if(commonlib.CheckFooter(driver, softassert))
-		{
-			System.out.println("Footer Verified");
-		}
-		else
-		{
-			softassert.fail("Footer not verified");
-		}
+		commonlib.CheckFooter(driver, softassert);
 		
 		switch(TestCaseName){
 		case "TC_NewsLetter":
