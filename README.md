@@ -16,14 +16,17 @@ Without applying any sorting for Price and Product name, verify the sorting resu
 
 Verify the checkout journey by adding any product to the cart. *
 
-Installing Required :
+Pre-requisities:
 Eclipse
-TestNG from eclipse market place
+Maven
+Chrome
+ChromeDriver(if broswer updates)
 
 Description:
 
-Selenium 3.141 is used to automate the test cases. Chromium driver is used for the browser.
+The framework is designed using page object model. Excel sheets are used considering the number of test cases.Selenium 3.141 is used to automate the test cases. Chromium driver is used for the browser.
 
 Execution:
 
 The project can be executed by running the Test class as TestNG suite under the Tests package.
+
