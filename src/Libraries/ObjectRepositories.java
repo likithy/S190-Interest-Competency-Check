@@ -214,6 +214,11 @@ catch (NoSuchElementException e) {
 			locatordetails[1] = "selectProductSort";
 			break;
 			
+		case "LNK_SummerDresses_SelectSort":
+			locatordetails[0] = "xpath";
+			locatordetails[1] = "//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]";
+			break;	
+			
 			
 		}
 	return locatordetails;
