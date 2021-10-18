@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="194348" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:18:49 IST">
+  <suite name="Default suite" duration-ms="182176" started-at="2021-10-18T14:20:51 IST" finished-at="2021-10-18T14:23:53 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="194348" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:18:49 IST">
+    <test name="Default test" duration-ms="182176" started-at="2021-10-18T14:20:51 IST" finished-at="2021-10-18T14:23:53 IST">
       <class name="Tests.Tests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Tests@551aa95a]" name="setup" is-config="true" duration-ms="15567" started-at="2021-10-18T14:15:35 IST" finished-at="2021-10-18T14:15:50 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.Tests@551aa95a]" name="setup" is-config="true" duration-ms="12497" started-at="2021-10-18T14:20:51 IST" finished-at="2021-10-18T14:21:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="CheckOut_Flow()[pri:0, instance:Tests.Tests@551aa95a]" name="CheckOut_Flow" duration-ms="29395" started-at="2021-10-18T14:15:51 IST" finished-at="2021-10-18T14:16:20 IST">
+        <test-method status="PASS" signature="CheckOut_Flow()[pri:0, instance:Tests.Tests@551aa95a]" name="CheckOut_Flow" duration-ms="25376" started-at="2021-10-18T14:21:04 IST" finished-at="2021-10-18T14:21:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOut_Flow -->
-        <test-method status="FAIL" signature="Verify_SummerDresses_Sorting()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_Sorting" duration-ms="60600" started-at="2021-10-18T14:16:20 IST" finished-at="2021-10-18T14:17:21 IST">
+        <test-method status="FAIL" signature="Verify_SummerDresses_Sorting()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_Sorting" duration-ms="60728" started-at="2021-10-18T14:21:29 IST" finished-at="2021-10-18T14:22:30 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -73,7 +73,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SummerDresses_Sorting -->
-        <test-method status="FAIL" signature="Verify_SummerDresses_filters()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_filters" duration-ms="81735" started-at="2021-10-18T14:17:21 IST" finished-at="2021-10-18T14:18:42 IST">
+        <test-method status="FAIL" signature="Verify_SummerDresses_filters()[pri:0, instance:Tests.Tests@551aa95a]" name="Verify_SummerDresses_filters" duration-ms="76888" started-at="2021-10-18T14:22:30 IST" finished-at="2021-10-18T14:23:47 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -157,11 +157,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SummerDresses_filters -->
-        <test-method status="PASS" signature="checknewsletter()[pri:0, instance:Tests.Tests@551aa95a]" name="checknewsletter" duration-ms="5951" started-at="2021-10-18T14:18:42 IST" finished-at="2021-10-18T14:18:48 IST">
+        <test-method status="PASS" signature="checknewsletter()[pri:0, instance:Tests.Tests@551aa95a]" name="checknewsletter" duration-ms="5586" started-at="2021-10-18T14:23:47 IST" finished-at="2021-10-18T14:23:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checknewsletter -->
-        <test-method status="PASS" signature="closedrivers()[pri:0, instance:Tests.Tests@551aa95a]" name="closedrivers" is-config="true" duration-ms="912" started-at="2021-10-18T14:18:48 IST" finished-at="2021-10-18T14:18:49 IST">
+        <test-method status="PASS" signature="closedrivers()[pri:0, instance:Tests.Tests@551aa95a]" name="closedrivers" is-config="true" duration-ms="997" started-at="2021-10-18T14:23:52 IST" finished-at="2021-10-18T14:23:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closedrivers -->

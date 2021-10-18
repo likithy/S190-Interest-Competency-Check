@@ -139,7 +139,7 @@ public class SummerDresses {
 			String loadergif_xpath=repository.GetXpath( "IMG_SummerDresses_LoaderGif",softassert);
 			try {
 				driver.findElement(By.xpath(loadergif_xpath));
-				softassert.fail("Filter Not Applied Successfully for LNK_SummerDresses_PriceRange " );
+				softassert.fail("Sorting Not Applied Successfully for LNK_SummerDresses_PriceRange " );
 				}
 				catch(NoSuchElementException e)
 				{
